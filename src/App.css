@@ -1,0 +1,155 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+/*전역태그(밑작업)*/
+*{
+  font-family: 'Jua', sans-serif;
+  padding:0px;
+  margin:0px;
+}
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+}
+
+/*시작 페이지*/
+.start {
+  position: relative;
+  min-height: 100vh;
+  justify-content: center;
+  font-size: calc(20px + 2vmin);
+  color: white;
+}
+.logo{
+  width:30%;
+  padding-top:15%;
+  padding-left:35%;
+  padding-right:35%;
+  padding-bottom:5%;
+}
+.btn{
+  border:0;
+  background-color: white;
+  font-size: 20px;
+}
+.loginbtn{
+  position:absolute;
+  top:65%;
+  left:40%;
+}
+.registerbtn{
+  position:absolute;
+  top:65%;
+  right:40%;
+}
+
+/*헤더*/
+header{
+  box-sizing: border-box;
+  width: auto;
+  height:15vh;
+  font-size: calc(10px + 2vmin);
+}
+.logo_header{
+  position: absolute;
+  top:4%;
+  left:5%;
+}
+
+/*본문(임시)*/
+main{
+  width:auto;
+  height:77.5vh;
+}
+
+/*사이드바*/
+aside{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  float:right;
+  width:200px;
+  height: 92.5vh;
+  font-size: 20px;
+}
+aside > nav > ul{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height:70vh;
+}
+/*사이드바-공고문쓰기*/
+aside > box{
+  position: relative;
+  width:200px;
+  height: 200px;
+}
+.quartercircle{
+  position:absolute; 
+  bottom:0px;
+  right: 0px;
+  width:170px;
+  height:170px;
+  border-top-left-radius: 200px;
+  background-color: #FFBF19;
+}
+.icon_write{
+  width: 40%;
+  position:absolute; 
+  bottom:35px;
+  right: 35px;
+}
+/*사이드바-세로줄*/
+.lines{
+  position: absolute;
+  top:0;
+  right:200px;
+}
+.line{
+  float: right;
+  width:5px;
+  height:92.5vh;
+  margin-left: 10px;
+}
+.l1{
+  background-color: #FFDCDC;
+}
+.l2{
+  background-color: #FFC38C;
+}
+.l3{
+  background-color: #FFDE9E;
+}
+
+/*푸터*/
+footer{
+  width:100%;  
+  height: 7.5vh;
+  font-size: 10px;
+  text-align: center;
+}
+
+/*about페이지 본문*/
+.logo_about{
+  position: absolute;
+  top:15%;
+  left:17.5%;
+}
+.maintext{
+  position: absolute;
+  top:37.5%;
+  left:20%;
+  font-size: 20px;
+  line-height: 35px;
+}
+.subtext{
+  position: absolute;
+  top:55%;
+  left:20%;
+  line-height: 35px;
+  color:#5F5F5F;
+}
