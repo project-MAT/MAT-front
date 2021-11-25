@@ -133,6 +133,31 @@ footer{
   text-align: center;
 }
 
+/*404페이지*/
+.logo_404{
+  width:20%;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.icon_404{
+  width:15%;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.errortext{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  text-align: center;
+  font-size: 22.5px;
+  color: #5F5F5F;
+}
+
 /*about페이지 본문*/
 .logo_about{
   position: absolute;
