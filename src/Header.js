@@ -4,11 +4,9 @@ function Header() {
   return (
 
     //여기부터 JSX
-    <div className="App">
-      <header>
+    <header>
           <img img className="logo_header" alt="MAT로고" src="logo_header.png"/>
-      </header>
-    </div>
+    </header>
     //여기까지 JSX
   );
 }

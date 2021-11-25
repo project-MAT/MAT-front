@@ -50,6 +50,7 @@ a {
 header{
   box-sizing: border-box;
   width: auto;
+  width: calc(100% - 245px);
   height:15vh;
   font-size: calc(10px + 2vmin);
 }
@@ -62,6 +63,7 @@ header{
 /*본문(임시)*/
 main{
   width:auto;
+  width: calc(100% - 245px);
   height:77.5vh;
 }
 
