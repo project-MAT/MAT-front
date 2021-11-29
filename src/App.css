@@ -9,10 +9,10 @@
 ul {
 	list-style: none;
 }
-
 a {
 	text-decoration: none;
 	outline: none;
+  color: black;
 }
 
 /*시작 페이지*/
@@ -21,7 +21,6 @@ a {
   min-height: 100vh;
   justify-content: center;
   font-size: calc(20px + 2vmin);
-  color: white;
 }
 .logo{
   width:30%;
