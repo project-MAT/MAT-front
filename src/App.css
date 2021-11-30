@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
-/*전역태그(밑작업)*/
+
+/*-----전역태그(밑작업)-----*/
 *{
   font-family: 'Jua', sans-serif;
   padding:0px;
@@ -15,7 +16,7 @@ a {
   color: black;
 }
 
-/*시작 페이지*/
+/*-----시작 페이지-----*/
 .start {
   position: relative;
   min-height: 100vh;
@@ -45,7 +46,7 @@ a {
   right:40%;
 }
 
-/*헤더*/
+/*-----헤더-----*/
 header{
   box-sizing: border-box;
   width: auto;
@@ -59,14 +60,14 @@ header{
   left:5%;
 }
 
-/*본문(임시)*/
+/*-----본문-----*/
 main{
   width:auto;
   width: calc(100% - 245px);
   height:77.5vh;
 }
 
-/*사이드바*/
+/*-----사이드바-----*/
 aside{
   position: absolute;
   top: 0px;
@@ -83,7 +84,7 @@ aside > nav > ul{
   align-items: center;
   height:70vh;
 }
-/*사이드바-공고문쓰기*/
+/*사이드바_공고문쓰기*/
 aside > box{
   position: relative;
   width:200px;
@@ -104,7 +105,7 @@ aside > box{
   bottom:35px;
   right: 35px;
 }
-/*사이드바-세로줄*/
+/*사이드바_세로줄*/
 .lines{
   position: absolute;
   top:0;
@@ -126,7 +127,7 @@ aside > box{
   background-color: #FFDE9E;
 }
 
-/*푸터*/
+/*-----푸터------*/
 footer{
   width:100%;  
   height: 7.5vh;
@@ -134,7 +135,16 @@ footer{
   text-align: center;
 }
 
-/*404페이지*/
+/*-----로딩글씨(main)-----*/
+.loadingtext{
+  position: absolute;
+  font-size: 50px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+/*-----404페이지(main)-----*/
 .logo_404{
   width:20%;
   position: absolute;
@@ -159,7 +169,7 @@ footer{
   color: #5F5F5F;
 }
 
-/*about페이지 본문*/
+/*-----about페이지 본문-----*/
 .logo_about{
   position: absolute;
   top:15%;
@@ -178,4 +188,119 @@ footer{
   left:20%;
   line-height: 35px;
   color:#5F5F5F;
+}
+
+/*-----Rank페이지 본문-----*/
+#case1, #case2{
+  background-color: white;
+  border:none;
+  font-size: 25px;
+  color: #bebcbc;
+}
+#case1{
+  position: absolute;
+  top:17.5%;
+  left:15%;
+}
+#case2{
+  position: absolute;
+  top:30%;
+  left:15%;
+}
+.testgrid{
+  width:auto;
+  height: 77.5vh;
+  margin-right: 10%;
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: 1fr 1fr;
+  float:right;
+  text-align: center;
+  overflow: scroll;
+  -ms-overflow-style: none;
+}
+.testgrid::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+.testitem{
+  width:250px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: #FFDCDC;
+}
+.testtitle{
+  margin:10px;
+  width:230px;
+  height:150px;
+  border-radius: 20px;
+  background-color: white;
+  font-size: 25px;
+  line-height: 150px;
+}
+.testtag{
+  margin-left:20px;
+  margin-right:20px;
+  text-align: left;
+}
+
+/*-----로그인 팝업-----*/
+
+.popup{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 100vh;
+  background: #808080;
+}
+.popup_login{
+  position: fixed;
+  text-align: center;
+  top:20%;
+  left:35%;
+  width:30%;
+  height: 60vh;
+  border-radius: 30px;
+  background-color: white;
+  font-size: 20px;
+}
+.popup_register{
+  position: fixed;
+  text-align: center;
+  top:10%;
+  left:30%;
+  width:40%;
+  height: 80vh;
+  border-radius: 30px;
+  background-color: white;
+  font-size: 20px;
+}
+.popup_login > img{
+  position: absolute;
+  top:10%;
+  left:35%;
+  width:30%;
+}
+.logintext{
+  position: absolute;
+  top:20%;
+  left:45%;
+}
+.popupinput{
+  width:50%;
+  height:4vh;
+  border: 2px solid #FFA800;
+  border-radius: 10px;
+}
+.popupbtn{
+  position: absolute;
+  width: 30%;
+  height: 5vh;
+  top:70%;
+  left:35%;
+  background-color: #FFA800;
+  border-style: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 17px;
 }
