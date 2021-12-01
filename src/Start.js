@@ -21,9 +21,9 @@ function Start() {
         <img className="logo" alt="MAT로고" src="logo.png" />
         <button className="loginbtn btn" onClick={openLogin}>로그인</button>
         <button className="registerbtn btn" onClick={openRegister}>회원가입</button>
-        <div>{isLShowing && <Login />}</div>
-        <div>{isRShowing && <Register />}</div>
       </div>
+      <div>{isLShowing && <Login />}</div>
+      <div>{isRShowing && <Register />}</div>
     </div>
     //여기까지 JSX
   );
