@@ -16,7 +16,6 @@ class Post extends Component {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json",
-                "RefreshToken": "eyJhbGciOiJIUzI1NiJ9.eyJ0b2tlblR5cGUiOiJyZWZyZXNoVG9rZW4iLCJpYXQiOjE2MzcyMzYwOTUsImV4cCI6MTYzNzg0MDg5NX0.6DunsYreAq7f8yNy8D56eH1DrJGOaqVyWfwIrnrIMec"
             },
             body: JSON.stringify({
                 title: this.state.title,
@@ -45,11 +44,13 @@ class Post extends Component {
         return createPortal(
             //여기부터 JSX
             <div className="popup">
-                <div className="popup_register">
-                    <img src="logo_popup.png" />
-                    <p className="logintext">회원가입</p>
-                    <p className="idtext">제목</p><input id="title" name="title" className="popupinput" type="text" placeholder=" 제목을 입력하세요" onChange={this.handleInput} />
-                    <p className="idtext">내용</p><input id="content" name="content" className="popupinput" type="text" placeholder=" 내용을 입력하세요" onChange={this.handleInput} />
+                <div className="popup_post">
+                    <img className="icon_popup" src="logo_popup.png" />
+                    <p className="logintext">글쓰기</p>
+                    <input id="title" name="title" className="P11 popupinput" type="text" placeholder=" 제목을 입력하세요" onChange={this.handleInput} />
+                    <input id="content" name="content" className="P22 popupinput" type="text" placeholder=" 내용을 입력하세요" onChange={this.handleInput} />
+                    <input id="tag" name="tag" className="P33 popupinput" type="text" placeholder=" 해시 태그를 이용해 홍보해 보세요 ex)#디자이너 #MAT" />
+                    <img className="icon_sharp" src="./icon_sharp.png" />
                     <button className="popupbtn" onClick={this.handleJoin}>완료</button>
                 </div>
             </div>,
