@@ -19,7 +19,7 @@ function Aside() {
                 <nav>
                     <ul>
                     <Link to="/"><li>구인공고</li></Link>
-                    <Link to="/App"><li>HOT RANK</li></Link>
+                    <Link to="/Question"><li>HOT RANK</li></Link>
                     <Link to="/About"><li>알아보기</li></Link>
                     <Link to="/"><li><img img className="icon_mypage" alt="마이페이지" src="icon_mypage.png" /></li></Link>
                     </ul>
