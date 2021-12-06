@@ -1,7 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 
-/*-----전역태그(밑작업)-----*/
+/*-----=====전역태그(밑작업)=====-----*/
 *{
   font-family: 'Jua', sans-serif;
   padding:0px;
@@ -16,7 +16,7 @@ a {
   color: black;
 }
 
-/*-----시작 페이지-----*/
+/*-----=====시작 페이지=====-----*/
 .start {
   position: relative;
   min-height: 100vh;
@@ -46,7 +46,7 @@ a {
   right:40%;
 }
 
-/*-----헤더-----*/
+/*-----=====헤더=====-----*/
 header{
   box-sizing: border-box;
   width: auto;
@@ -60,14 +60,14 @@ header{
   left:5%;
 }
 
-/*-----본문-----*/
+/*-----=====본문=====-----*/
 main{
   width:auto;
   width: calc(100% - 245px);
   height:77.5vh;
 }
 
-/*-----사이드바-----*/
+/*-----=====사이드바=====-----*/
 aside{
   position: absolute;
   top: 0px;
@@ -127,7 +127,7 @@ aside > box{
   background-color: #FFDE9E;
 }
 
-/*-----푸터------*/
+/*-----=====푸터=====------*/
 footer{
   width:100%;  
   height: 7.5vh;
@@ -135,7 +135,7 @@ footer{
   text-align: center;
 }
 
-/*-----로딩글씨(main)-----*/
+/*-----=====로딩글씨(main)=====-----*/
 .loadingtext{
   position: absolute;
   font-size: 50px;
@@ -144,7 +144,7 @@ footer{
   transform: translate(-50%, 0%);
 }
 
-/*-----404페이지(main)-----*/
+/*-----=====404페이지(main)=====-----*/
 .logo_404{
   width:20%;
   position: absolute;
@@ -169,7 +169,7 @@ footer{
   color: #5F5F5F;
 }
 
-/*-----about페이지 본문-----*/
+/*-----=====about페이지 본문=====-----*/
 .logo_about{
   position: absolute;
   top:15%;
@@ -190,7 +190,7 @@ footer{
   color:#5F5F5F;
 }
 
-/*-----Rank페이지 본문-----*/
+/*-----=====Rank페이지 본문=====-----*/
 #case1, #case2{
   background-color: white;
   border:none;
@@ -220,7 +220,7 @@ footer{
   -ms-overflow-style: none;
 }
 .testgrid::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera*/
+  display: none;
 }
 .testitem{
   width:250px;
@@ -243,8 +243,7 @@ footer{
   text-align: left;
 }
 
-/*-----로그인 팝업-----*/
-
+/*-----=====팝업창=====-----*/
 .popup{
   position: absolute;
   top: 0;
@@ -253,6 +252,13 @@ footer{
   height: 100vh;
   background: #808080;
 }
+.popupinput{
+  width:50%;
+  height:4vh;
+  border: 2px solid #FFA800;
+  border-radius: 10px;
+}
+/*로그인*/
 .popup_login{
   position: fixed;
   text-align: center;
@@ -260,17 +266,6 @@ footer{
   left:35%;
   width:30%;
   height: 60vh;
-  border-radius: 30px;
-  background-color: white;
-  font-size: 20px;
-}
-.popup_register{
-  position: fixed;
-  text-align: center;
-  top:10%;
-  left:30%;
-  width:40%;
-  height: 80vh;
   border-radius: 30px;
   background-color: white;
   font-size: 20px;
@@ -283,24 +278,187 @@ footer{
 }
 .logintext{
   position: absolute;
-  top:20%;
+  top:22%;
   left:45%;
 }
-.popupinput{
-  width:50%;
-  height:4vh;
-  border: 2px solid #FFA800;
-  border-radius: 10px;
-}
-.popupbtn{
+.popup_login > .popupbtn{
   position: absolute;
   width: 30%;
   height: 5vh;
-  top:70%;
+  top:75%;
   left:35%;
   background-color: #FFA800;
   border-style: none;
   border-radius: 10px;
   color: white;
   font-size: 17px;
+}
+.L1{
+  position: absolute;
+  top:40%;
+  left:20%;
+}
+.L11{
+  position: absolute;
+  top:39%;
+  left:37.5%;
+}
+.L2{
+  position: absolute;
+  top:55%;
+  left:17%;
+}
+.L22{
+  position: absolute;
+  top:54%;
+  left:37.5%;
+}
+/*회원가입*/
+.popup_register{
+  position: fixed;
+  text-align: center;
+  top:10%;
+  left:30%;
+  width:40%;
+  height: 80vh;
+  border-radius: 30px;
+  background-color: white;
+  font-size: 20px;
+}
+.popup_register >img{
+  position: absolute;
+  top:6%;
+  left:40%;
+  width:20%;
+}
+.registertext{
+  position: absolute;
+  top:13.5%;
+  left:45%;
+}
+.popup_register > .popupbtn{
+  position: absolute;
+  width: 30%;
+  height: 5vh;
+  top:85%;
+  left:35%;
+  background-color: #FFA800;
+  border-style: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 17px;
+}
+.R1{
+  position: absolute;
+  top:22%;
+  left:25%;
+}
+.R11{
+  position: absolute;
+  top:21%;
+  left:37.5%;
+}
+.R2{
+  position: absolute;
+  top:32%;
+  left:27.5%;
+}
+.R22{
+  position: absolute;
+  top:31%;
+  left:37.5%;
+}
+.R3{
+  position: absolute;
+  top:42%;
+  left:22.5%;
+}
+.R33{
+  position: absolute;
+  top:41%;
+  left:37.5%;
+}
+.R4{
+  position: absolute;
+  top:52%;
+  left:27.5%;
+}
+.R44{
+  position: absolute;
+  top:51%;
+  left:37.5%;
+}
+.R5{
+  position: absolute;
+  top:62%;
+  left:27.5%;
+}
+.R55{
+  position: absolute;
+  top:61%;
+  left:37.5%;
+}
+.R6{
+  position: absolute;
+  top:72%;
+  left:22.5%;
+}
+.R66{
+  position: absolute;
+  top:71%;
+  left:37.5%;
+}
+
+.popup_post{
+  position: absolute;
+  top:20%;
+  left:25%;
+  width:50%;
+  height:60vh;
+  background: #FFFFFF;
+  border-radius: 30px;
+}
+.icon_popup{
+  position: absolute;
+  top:5%;
+  left:40%;
+}
+.popup_post > .popupbtn{
+  position: absolute;
+  width: 10%;
+  height: 5vh;
+  top:85%;
+  left:45%;
+  background-color: #FFA800;
+  border-style: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 17px;
+}
+.P11{
+  position: absolute;
+  width:80%;
+  top:20%;
+  left:10%;
+}
+.P22{
+  position: absolute;
+  width:80%;
+  height: 40%;
+  top:30%;
+  left:10%;
+}
+.P33{
+  position: absolute;
+  background: #F0F0F0;
+  border: 0px;
+  width:72.5%;
+  height: 10%;
+  top:73%;
+  left:10%;
+}
+.icon_sharp{
+  position: absolute;
+  top:73%;
+  left:85%;
 }
