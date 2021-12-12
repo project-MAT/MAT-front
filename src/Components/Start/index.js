@@ -1,6 +1,5 @@
 import '../../App.css'
-import Login from '../LoginPage'
-import Register from '../../Register'
+import { LoginModal, LoginPage } from '../index'
 import React, { useState } from 'react'
 
 function Start() {
@@ -24,8 +23,8 @@ function Start() {
           회원가입
         </button>
       </div>
-      <div>{isLShowing && <Login />}</div>
-      <div>{isRShowing && <Register />}</div>
+      <div>{isLShowing && <LoginPage />}</div>
+      <div>{isRShowing && <LoginModal />}</div>
     </div>
     //여기까지 JSX
   )

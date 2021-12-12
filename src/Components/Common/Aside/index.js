@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import '../../../App.css'
-import Post from '../../../Post'
+import { EditModal } from '../../index'
 import React, { useState } from 'react'
 
 function Aside() {
@@ -49,7 +49,7 @@ function Aside() {
           </div>
         </nav>
       </aside>
-      <div>{isLShowing && <Post />}</div>
+      <div>{isLShowing && <EditModal />}</div>
     </div>
   )
 }

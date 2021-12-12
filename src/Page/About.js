@@ -1,4 +1,5 @@
 import { Header, AboutPage, Aside, Footer } from '../Components'
+
 function About() {
   return (
     <>
