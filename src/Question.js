@@ -1,8 +1,8 @@
-import React from 'react';
-import Header from './Header';
-import Aside from './Aside';
-import Footer from './Footer';
-import GetQuestion from './GetQuestion';
+import React from 'react'
+import Header from './Components/Common/Header'
+import Footer from './Components/Common/Footer'
+import Aside from './Components/Common/Aside'
+import GetQuestion from './GetQuestion'
 
 function Question() {
   return (
@@ -15,4 +15,4 @@ function Question() {
   )
 }
 
-export default Question;
+export default Question

@@ -1,0 +1,7 @@
+export { default as Header } from './Common/Header'
+export { default as Footer } from './Common/Footer'
+export { default as Aside } from './Common/Aside'
+export { default as Start } from './Start'
+export { default as About } from './About'
+export { default as Login } from './Login'
+export { default as NotFound } from './NotFound'
