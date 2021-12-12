@@ -3,7 +3,7 @@ import { createPortal } from 'react-dom'
 import { Component } from 'react'
 import axios from 'axios'
 
-class Login extends Component {
+class LoginPage extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -88,4 +88,4 @@ class Login extends Component {
   }
 }
 
-export default Login
+export default LoginPage

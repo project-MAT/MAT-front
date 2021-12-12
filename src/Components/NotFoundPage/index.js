@@ -1,6 +1,6 @@
 import '../../App.css'
 
-function Page404() {
+function NotFoundPage() {
   return (
     //여기부터 JSX
     <main>
@@ -16,4 +16,4 @@ function Page404() {
   )
 }
 
-export default Page404
+export default NotFoundPage

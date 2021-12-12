@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import Page404 from './Components/NotFound'
+import Page404 from '../NotFoundPage'
 
-function GetQuestion() {
+function QuestionPage() {
   const [currentClick, setCurrentClick] = React.useState(null)
   const [prevClick, setPrevClick] = React.useState(null)
 
@@ -77,4 +77,4 @@ function GetQuestion() {
   )
 }
 
-export default GetQuestion
+export default QuestionPage

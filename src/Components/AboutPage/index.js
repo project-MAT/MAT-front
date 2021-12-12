@@ -1,12 +1,8 @@
 import '../../App.css'
-import Header from '../Common/Header'
-import Aside from '../Common/Aside'
-import Footer from '../Common/Footer'
 
-function About() {
+function AboutPage() {
   return (
     <div className="App">
-      <Header />
       <main>
         <img className="logo_about" alt="MAT로고" src="logo_about.png" />
         <p div className="maintext">
@@ -31,11 +27,9 @@ function About() {
           문의해주세요
         </p>
       </main>
-      <Aside />
-      <Footer />
     </div>
     //여기까지 JSX
   )
 }
 
-export default About
+export default AboutPage
