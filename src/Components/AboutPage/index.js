@@ -28,7 +28,6 @@ function AboutPage() {
         </p>
       </main>
     </div>
-    //여기까지 JSX
   )
 }
 
