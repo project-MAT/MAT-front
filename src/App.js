@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import * as P from './Page'
+import * as P from './Pages'
 
 export default class Router extends React.Component {
   render() {
