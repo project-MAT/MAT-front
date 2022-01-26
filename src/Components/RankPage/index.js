@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import Page404 from '../NotFoundPage'
+import NotFoundPage from '../NotFoundPage'
 
-function QuestionPage() {
+const RankPage = () => {
   const [currentClick, setCurrentClick] = React.useState(null)
   const [prevClick, setPrevClick] = React.useState(null)
 
@@ -55,7 +55,7 @@ function QuestionPage() {
         <div className="loadingtext">로딩중..</div>
       </main>
     )
-  if (error) return <Page404 />
+  if (error) return <NotFoundPage />
   if (!data) return null
   return (
     <main>
@@ -77,4 +77,4 @@ function QuestionPage() {
   )
 }
 
-export default QuestionPage
+export default RankPage
