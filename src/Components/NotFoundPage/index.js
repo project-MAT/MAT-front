@@ -1,6 +1,6 @@
 import '../../App.css'
 
-function NotFoundPage() {
+const NotFoundPage = () => {
   return (
     //여기부터 JSX
     <main>
