@@ -1,0 +1,27 @@
+header {
+  position: relative;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 150px;
+  height: 80px;
+}
+
+input {
+  border: 0;
+  border-bottom: 5px solid #ffbf19;
+  border-radius: 3px;
+  height: 55px;
+  width: 36vw;
+  outline: 0;
+  margin-left: 50px;
+}
+
+.search {
+  position: absolute;
+  left: 70vw;
+}

@@ -1,13 +1,16 @@
-import '../../../App.css'
+import * as I from "../../../Assets/SVG";
+import "./style.css";
 
-function Header() {
+const Header = () => {
   return (
     //여기부터 JSX
     <header>
-      <img img className="logo_header" alt="MAT로고" src="logo_header.png" />
+      <I.SmallLogo />
+      <input type="text" />
+      <div className="search"><I.Search /></div>
     </header>
     //여기까지 JSX
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

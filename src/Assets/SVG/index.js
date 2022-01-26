@@ -1,2 +1,3 @@
-export { default as Logo } from './Logo'
-export { default as Write } from './Write'
+export { default as SmallLogo } from "./SmallLogo";
+export { default as Write } from "./Write";
+export { default as Search } from "./Search";
