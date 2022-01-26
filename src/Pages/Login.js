@@ -1,13 +1,13 @@
-import { Header, LoginPage, Aside, Footer } from '../Components'
-function Login() {
+import { Header, LoginPage, Aside } from "../Components";
+
+const Login = () => {
   return (
     <>
       <Header />
       <LoginPage />
       <Aside />
-      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;

@@ -1,6 +1,6 @@
 import '../../App.css'
 
-function AboutPage() {
+const AboutPage = () => {
   return (
     <div className="App">
       <main>
