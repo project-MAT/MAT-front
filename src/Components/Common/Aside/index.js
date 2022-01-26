@@ -1,55 +1,19 @@
-import { Link } from 'react-router-dom'
-import '../../../App.css'
+import { NavLink } from 'react-router-dom'
 import { EditModal } from '../../index'
 import React, { useState } from 'react'
+import * as I from '../../../Assets/SVG'
+import './style.css'
 
-function Aside() {
-  const [isLShowing, setPostShowing] = useState(false)
-  const openPost = () => {
-    setPostShowing(true)
-  }
+const Aside = () => {
   return (
-    <div>
-      <div className="lines">
-        <div className="line l1" />
-        <div className="line l2" />
-        <div className="line l3" />
+    <div className="aside">
+      <NavLink to="/main">구인공고</NavLink>
+      <NavLink to="/rank">HOT RANK</NavLink>
+      <NavLink to="/about">알아보기</NavLink>
+      <NavLink to="/user">My Page</NavLink>
+      <div className="writeSection">
+        공고문 쓰기 <I.Write />
       </div>
-      <aside>
-        <nav>
-          <ul>
-            <Link to="/">
-              <li>구인공고</li>
-            </Link>
-            <Link to="/Question">
-              <li>HOT RANK</li>
-            </Link>
-            <Link to="/About">
-              <li>알아보기</li>
-            </Link>
-            <Link to="/">
-              <li>
-                <img
-                  img
-                  className="icon_mypage"
-                  alt="마이페이지"
-                  src="icon_mypage.png"
-                />
-              </li>
-            </Link>
-          </ul>
-          <div className="box">
-            <div className="quartercircle" onClick={openPost}>
-              <img
-                className="icon_write"
-                alt="공고문 작성"
-                src="icon_write.png"
-              />
-            </div>
-          </div>
-        </nav>
-      </aside>
-      <div>{isLShowing && <EditModal />}</div>
     </div>
   )
 }
