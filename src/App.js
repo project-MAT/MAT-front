@@ -8,8 +8,9 @@ export default class Router extends React.Component {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<P.Start />} />
+          <Route path="/main" element={<P.Main />} />
           <Route path="/About" element={<P.About />} />
-          <Route path="/Question" element={<P.Question />} />
+          <Route path="/rank" element={<P.Question />} />
           <Route path="/*" element={<P.NotFound />} />
         </Routes>
       </BrowserRouter>
