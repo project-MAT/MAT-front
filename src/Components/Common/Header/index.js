@@ -6,8 +6,12 @@ const Header = () => {
     //여기부터 JSX
     <header>
       <I.SmallLogo />
-      <input type="text" />
-      <div className="search"><I.Search /></div>
+      <div className="searchSection">
+        <input type="text" />
+        <div className="search">
+          <I.Search />
+        </div>
+      </div>
     </header>
     //여기까지 JSX
   );
