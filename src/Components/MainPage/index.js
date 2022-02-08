@@ -1,11 +1,27 @@
-import React from 'react'
-import './style.css'
+import React, { useState } from "react";
+import "./style.css";
+import MainItem from "./MainItem";
 const MainPage = () => {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+  const [value, setValue] = useState([
+    { title: "MAT 디자이너 구합니다", tag: "#디자이너 #MAT" },
+    { title: "MAT 디자이너 구합니다", tag: "#디자이너 #MAT" },
+    { title: "MAT 디자이너 구합니다", tag: "#디자이너 #MAT" },
+    { title: "MAT 디자이너 구합니다", tag: "#디자이너 #MAT" },
+    { title: "MAT 디자이너 구합니다", tag: "#디자이너 #MAT" },
+    { title: "MAT 디자이너 구합니다", tag: "#디자이너 #MAT" },
+    { title: "MAT 디자이너 구합니다", tag: "#디자이너 #MAT" },
+    { title: "MAT 디자이너 구합니다", tag: "#디자이너 #MAT" },
+    { title: "MAT 디자이너 구합니다", tag: "#디자이너 #MAT" },
+    { title: "MAT 디자이너 구합니다", tag: "#디자이너 #MAT" },
+  ]);
 
-export default MainPage
+  return (
+    <main className="MainSection">
+      {value.map((item, i) => (
+        <MainItem item={item} key={i} index={i}></MainItem>
+      ))}
+    </main>
+  );
+};
+
+export default MainPage;
