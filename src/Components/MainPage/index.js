@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
-import MainItem from "./MainItem";
+import MainItem from "../Common/WriteBkx";
+
 const MainPage = () => {
   const [value, setValue] = useState([
     { title: "MAT 디자이너 구합니다", tag: "#디자이너 #MAT" },
