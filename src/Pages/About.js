@@ -1,4 +1,4 @@
-import { Header, AboutPage, Aside, Footer } from '../Components'
+import { Header, AboutPage, Aside } from "../Components";
 
 function About() {
   return (
@@ -6,9 +6,8 @@ function About() {
       <Header />
       <AboutPage />
       <Aside />
-      <Footer />
     </>
-  )
+  );
 }
 
-export default About
+export default About;
