@@ -1,4 +1,4 @@
-import '../Modal.css'
+import '../LoginModal/style.css'
 import { createPortal } from 'react-dom'
 import { Component } from 'react'
 

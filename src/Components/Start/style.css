@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
-*{
-    font-family: 'Jua', sans-serif;
-}
 .start {
     position: relative;
     min-height: 100vh;
@@ -18,16 +14,47 @@
 .start > .login{
     position: absolute;
     top:55%;
-    left:40%;
+    left:37.5%;
+    text-align: right;
 }
 .start > .register{
     position: absolute;
     top:55%;
-    right:40%;
+    right:37.5%;
+    text-align: left;
 }
 .popupbtn{
     width:125px;
     height:50px;
     background-color: white;
     border:0px;
+}
+
+@media ( max-width: 1000px ) {
+    .start > .login{
+        position: absolute;
+        top:55%;
+        left:30%;
+        text-align: right;
+    }
+    .start > .register{
+        position: absolute;
+        top:55%;
+        right:30%;
+        text-align: left;
+    }
+}
+@media ( max-width: 650px ) {
+    .start > .login{
+        position: absolute;
+        top:55%;
+        left:25%;
+        text-align: right;
+    }
+    .start > .register{
+        position: absolute;
+        top:55%;
+        right:25%;
+        text-align: left;
+    }
 }
