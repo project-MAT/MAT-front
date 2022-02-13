@@ -1,5 +1,4 @@
 export { default as About } from './About'
-export { default as Login } from './Login'
 export { default as NotFound } from './NotFound'
 export { default as Rank } from './Rank'
 export { default as Start } from './Start'
