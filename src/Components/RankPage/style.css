@@ -1,8 +1,35 @@
 .MainSection {
   padding: 110px 0 0 150px;
+  display: flex;
 }
 
-.Select {
+.SelectSection {
+  position: fixed;
+}
+
+.circle {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ffbf19;
+  margin-right: 15px;
+}
+
+.select {
+  display: inline-block;
   cursor: pointer;
   margin-bottom: 80px;
+}
+
+.RankSection {
+  display: inline-flex;
+  margin: 50px 0 0 450px;
+  justify-content: space-around;
+}
+
+.rank {
+  display: flex;
+  flex-direction: column;
+  margin-right: 100px;
 }
