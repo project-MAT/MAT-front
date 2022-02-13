@@ -1,0 +1,60 @@
+.start {
+    position: relative;
+    min-height: 100vh;
+    justify-content: center;
+    font-size: calc(20px + 2vmin);
+  }
+.logo{
+    width:375px;
+    height:200px;
+    position: absolute;
+    top:30%;
+    left:calc(50% - 187.5px);
+}
+.start > .login{
+    position: absolute;
+    top:55%;
+    left:37.5%;
+    text-align: right;
+}
+.start > .register{
+    position: absolute;
+    top:55%;
+    right:37.5%;
+    text-align: left;
+}
+.popupbtn{
+    width:125px;
+    height:50px;
+    background-color: white;
+    border:0px;
+}
+
+@media ( max-width: 1000px ) {
+    .start > .login{
+        position: absolute;
+        top:55%;
+        left:30%;
+        text-align: right;
+    }
+    .start > .register{
+        position: absolute;
+        top:55%;
+        right:30%;
+        text-align: left;
+    }
+}
+@media ( max-width: 650px ) {
+    .start > .login{
+        position: absolute;
+        top:55%;
+        left:25%;
+        text-align: right;
+    }
+    .start > .register{
+        position: absolute;
+        top:55%;
+        right:25%;
+        text-align: left;
+    }
+}
