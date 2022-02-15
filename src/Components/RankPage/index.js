@@ -26,6 +26,7 @@ const RankPage = () => {
 
   return (
     <main className="MainSection">
+      
       <div className="SelectSection">
         <div>
           <div
@@ -64,6 +65,7 @@ const RankPage = () => {
           </span>
         </div>
       </div>
+
       <div className="RankSection">
         <div
           className="rank"
@@ -88,6 +90,7 @@ const RankPage = () => {
           ))}
         </div>
       </div>
+
     </main>
   );
 };
