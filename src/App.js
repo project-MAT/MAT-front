@@ -10,6 +10,7 @@ const App = () => {
         <Route path="/main" element={<P.Main />} />
         <Route path="/About" element={<P.About />} />
         <Route path="/rank" element={<P.Rank />} />
+        <Route path="/My" element={<P.My />} />
         <Route path="/*" element={<P.NotFound />} />
       </Routes>
     </BrowserRouter>

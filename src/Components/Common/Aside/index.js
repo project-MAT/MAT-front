@@ -26,7 +26,7 @@ const Aside = () => {
         알아보기
       </NavLink>
       <NavLink
-        to="/user"
+        to="/My"
         className={({ isActive }) => (isActive ? "activated" : "")}
       >
         My Page
