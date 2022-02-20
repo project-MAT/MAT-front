@@ -1,0 +1,45 @@
+.wrapper {
+    display: inline-block;
+  }
+  
+  .ItemSection {
+    display: inline-block;
+    width: 326px;
+    height: 244px;
+    margin: 0 50px 75px 0;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding-top: 10px;
+  }
+  
+  .TitleSection {
+    width: 303px;
+    height: 184px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin: 0 auto;
+  }
+  
+  .title {
+    text-align: center;
+    line-height: 184px;
+    font-size: 20px;
+  }
+  
+  .TagSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .tag {
+    display: inline-block;
+  }
+  
+ .fix{
+     margin-left: 70px;
+ }
+ .del{
+     margin-right: 10px;
+ }

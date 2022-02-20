@@ -1,0 +1,38 @@
+.MyPage > p {
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 50px;
+    margin-bottom: 25px;
+}
+.myitem{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width:calc(100% - 410px);
+    height: 300px;
+    white-space:nowrap;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+.myitem::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+}
+.major{
+    width:280px;
+    height: 50px;
+    border: 0px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+.discordNum{
+    width:280px;
+    height: 50px;
+    border: 0px;
+    margin:0px;
+    padding: 0px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-left: 100px;
+    padding-left: 25px;
+}
