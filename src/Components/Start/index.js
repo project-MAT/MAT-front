@@ -1,7 +1,7 @@
 import '../Start/style.css'
 import React, { useState } from 'react'
 import LoginModal from "../Modals/LoginModal/index"
-import RegisterModal from '../Modals/RegisterModal'
+import RegisterModal from '../Modals/RegisterModal/index'
 
 function Start() {
   const [loginShowing, setLoginShowing] = useState(false)
