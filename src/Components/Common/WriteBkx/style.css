@@ -4,8 +4,8 @@
 
 .ItemSection {
   display: inline-block;
-  width: 326px;
-  height: 244px;
+  width: 17vw;
+  height: 26vh;
   margin: 0 50px 75px 0;
   border-radius: 20px;
   box-sizing: border-box;
@@ -13,8 +13,8 @@
 }
 
 .TitleSection {
-  width: 303px;
-  height: 184px;
+  width: 15vw;
+  height: 19vh;
   background-color: #ffffff;
   border-radius: 10px;
   margin: 0 auto;
@@ -22,7 +22,7 @@
 
 .title {
   text-align: center;
-  line-height: 184px;
+  line-height: 19vh;
   font-size: 20px;
 }
 
