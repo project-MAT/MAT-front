@@ -3,7 +3,6 @@ import "./style.css";
 
 const Header = () => {
   return (
-    //여기부터 JSX
     <header>
       <I.SmallLogo />
       <div className="searchSection">
@@ -13,7 +12,6 @@ const Header = () => {
         </div>
       </div>
     </header>
-    //여기까지 JSX
   );
 };
 
