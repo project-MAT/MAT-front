@@ -1,6 +1,6 @@
-import React from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import * as P from './Pages'
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import * as P from "./Pages";
 
 const App = () => {
   return (
@@ -8,13 +8,13 @@ const App = () => {
       <Routes>
         <Route path="/" element={<P.Start />} />
         <Route path="/main" element={<P.Main />} />
-        <Route path="/About" element={<P.About />} />
+        <Route path="/about" element={<P.About />} />
         <Route path="/rank" element={<P.Rank />} />
-        <Route path="/My" element={<P.My />} />
+        <Route path="/my" element={<P.My />} />
         <Route path="/*" element={<P.NotFound />} />
       </Routes>
     </BrowserRouter>
-  )
-}
+  );
+};
 
-export default App
+export default App;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
-import MainItem from "../Common/WriteBkx";
+import MainItem from "../Common/WriteBox";
 
 const MainPage = () => {
   const [value, setValue] = useState([
@@ -19,7 +19,7 @@ const MainPage = () => {
   return (
     <main className="MainSection">
       {value.map((item, i) => (
-        <MainItem item={item} key={i} index={i}></MainItem>
+        <MainItem item={item} key={i} index={i} isMine={false}></MainItem>
       ))}
     </main>
   );

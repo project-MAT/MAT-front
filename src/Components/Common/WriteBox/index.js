@@ -5,6 +5,7 @@ import * as I from "../../../Assets/SVG";
 const MainItem = (props) => {
   const item = props.item;
   const index = props.index;
+  const isMine = props.isMine;
   const [like, setLike] = useState(false);
   const [background, setBackground] = useState();
 
@@ -25,10 +26,17 @@ const MainItem = (props) => {
           <div className="title">{item.title}</div>
         </div>
         <span className="TagSection">
-          <div className="tag">{item.tag}</div>
-          <div className="like" onClick={() => TryLike()}>
-            {like ? <I.RedLike /> : <I.BlackLike />}
-          </div>
+          <span className="tag">{item.tag}</span>
+          {isMine ? (
+            <span className="WorkSection">
+              <img src="fix.png" className="fix" />
+              <img src="del.png" className="del" />
+            </span>
+          ) : (
+            <div className="like" onClick={() => TryLike()}>
+              {like ? <I.RedLike /> : <I.BlackLike />}
+            </div>
+          )}
         </span>
       </div>
     </div>
