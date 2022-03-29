@@ -15,7 +15,7 @@ header {
   width: 36vw;
 }
 
-input {
+.searchSection > input {
   border: 0;
   border-bottom: 5px solid #ffbf19;
   border-radius: 3px;
