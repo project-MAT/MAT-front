@@ -1,80 +1,98 @@
-import React, { useState, useEffect } from 'react'
-import axios from 'axios'
-import NotFoundPage from '../NotFoundPage'
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import NotFoundPage from "../NotFoundPage";
+import "./style.css";
+import MainItem from "../Common/WriteBkx";
 
 const RankPage = () => {
-  const [currentClick, setCurrentClick] = React.useState(null)
-  const [prevClick, setPrevClick] = React.useState(null)
+  const [liked, setLiked] = useState([
+    { title: "좋아요", tag: "#디자이너 #MAT" },
+    { title: "좋아요", tag: "#디자이너 #MAT" },
+    { title: "좋아요", tag: "#디자이너 #MAT" },
+    { title: "좋아요", tag: "#디자이너 #MAT" },
+    { title: "좋아요", tag: "#디자이너 #MAT" },
+    { title: "좋아요", tag: "#디자이너 #MAT" },
+    // { title: "좋아요", tag: "#디자이너 #MAT" },
+  ]);
+  const [recent, setRecent] = useState([
+    { title: "최근", tag: "#디자이너 #MAT" },
+    { title: "최근", tag: "#디자이너 #MAT" },
+    // { title: "최근", tag: "#디자이너 #MAT" },
+    // { title: "최근", tag: "#디자이너 #MAT" },
+  ]);
 
-  const GetClick = e => {
-    setCurrentClick(e.target.id)
-    console.log(e.target.id)
-  }
+  const [likeOpacity, setLikeOpacity] = useState(1);
+  const [recentOpacity, setRecentOpacity] = useState(0.4);
 
-  React.useEffect(
-    e => {
-      if (currentClick !== null) {
-        let current = document.getElementById(currentClick)
-        console.log(current)
-        current.style.color = 'black'
-      }
-
-      if (prevClick !== null) {
-        let prev = document.getElementById(prevClick)
-        prev.style.color = '#bebcbc'
-      }
-      setPrevClick(currentClick)
-    },
-    [currentClick]
-  )
-
-  const [data, setData] = useState(null)
-  const [loading, setLoading] = useState(false)
-  const [error, setError] = useState(null)
-
-  useEffect(() => {
-    const fetchUsers = async () => {
-      try {
-        setError(null)
-        setData(null)
-        setLoading(true)
-        const response = await axios.get('/v1/question/rank/like')
-        setData(response.data.list) // 데이터는 response.data 안에 들어있습니다.
-      } catch (e) {
-        setError(e)
-      }
-      setLoading(false)
-    }
-
-    fetchUsers()
-  }, [])
-
-  if (loading)
-    return (
-      <main>
-        <div className="loadingtext">로딩중..</div>
-      </main>
-    )
-  if (error) return <NotFoundPage />
-  if (!data) return null
   return (
-    <main>
-      <button id="case1" onClick={GetClick}>
-        좋아요를 많이받은 구인공고
-      </button>
-      <button id="case2" onClick={GetClick}>
-        최근에 올라온 구인공고
-      </button>
-      <div className="testgrid">
-        {data.map(data => (
-          <div key={data.question_id} className="testitem">
-            <div className="testtitle">{data.title}</div>
-            <p className="testtag">#테스트 테그</p>
-          </div>
-        ))}
+    <main className="MainSection">
+      
+      <div className="SelectSection">
+        <div>
+          <div
+            className="circle"
+            style={{
+              opacity: likeOpacity === 1 ? 1 : 0,
+            }}
+          ></div>
+          <span
+            className="select"
+            onClick={() => {
+              setLikeOpacity(1);
+              setRecentOpacity(0.4);
+            }}
+            style={{
+              opacity: `${likeOpacity}`,
+            }}
+          >
+            좋아요를 많이 받은 구인공고
+          </span>
+        </div>
+        <div>
+          <div
+            className="circle"
+            style={{ opacity: recentOpacity === 1 ? 1 : 0 }}
+          ></div>
+          <span
+            className="select"
+            onClick={() => {
+              setLikeOpacity(0.4);
+              setRecentOpacity(1);
+            }}
+            style={{ opacity: `${recentOpacity}` }}
+          >
+            최근에 올라온 구인공고
+          </span>
+        </div>
       </div>
-    </main>
-  )
-}
 
-export default RankPage
+      <div className="RankSection">
+        <div
+          className="rank"
+          style={{
+            opacity: `${likeOpacity}`,
+            pointerEvents: likeOpacity === 1 ? "auto" : "none",
+          }}
+        >
+          {liked.map((liked, i) => (
+            <MainItem item={liked} key={i} index={i} />
+          ))}
+        </div>
+        <div
+          className="rank"
+          style={{
+            opacity: `${recentOpacity}`,
+            pointerEvents: recentOpacity === 1 ? "auto" : "none",
+          }}
+        >
+          {recent.map((recent, i) => (
+            <MainItem item={recent} key={i} index={i} />
+          ))}
+        </div>
+      </div>
+
+    </main>
+  );
+};
+
+export default RankPage;

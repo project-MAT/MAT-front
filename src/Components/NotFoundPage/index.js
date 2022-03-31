@@ -1,19 +1,16 @@
-import '../../App.css'
+import * as I from "../../Assets/SVG";
+import "./style.css";
 
 const NotFoundPage = () => {
   return (
-    //여기부터 JSX
-    <main>
-      <img className="logo_404" alt="MAT로고" src="logo_404.png" />
-      <img className="icon_404" alt="MAT로고" src="icon_404.png" />
-      <p className="errortext">
-        페이지를 불러오지 못했어요 :(
-        <br />
-        서버 점검중이거나 입력하신 주소가 잘못되었습니다
+    <main className="NotFoundPage">
+      <I.NotfoundLogo />
+      <p className="message">
+        페이지를 찾지 못했어요 :( <br />
+        입력하신 주소가 정확한지 한번 더 확인해주세요
       </p>
     </main>
-    //여기까지 JSX
-  )
-}
+  );
+};
 
-export default NotFoundPage
+export default NotFoundPage;
