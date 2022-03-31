@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Hahmlet:wght@700&family=Noto+Sans+KR:wght@700&display=swap");
+
+.AboutSection {
+  padding: 200px 0 0 200px;
+  display: flex;
+  position: absolute;
+  top: 0px;
+  height: 100vh;
+  box-sizing: border-box;
+  z-index: -1;
+}
+@media screen and (max-height: 750px) {
+  .AboutSection {
+    height: inherit;
+  }
+}
+
+.lineSection {
+  display: flex;
+}
+
+.line {
+  width: 10px;
+}
+
+.line:nth-child(1) {
+  border-left: 7px solid #ffdcdc;
+}
+
+.line:nth-child(2) {
+  border-left: 7px solid #ffc38c;
+}
+
+.line:nth-child(3) {
+  border-left: 7px solid #ffde9e;
+  width: 100px;
+}
+
+.TextSection > p {
+  margin-left: 50px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.mainText {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 34px;
+  margin: 30px 0 60px;
+  line-height: 34px;
+}
+
+.subText {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 27px;
+  color: #5f5f5f;
+  line-height: 34px;
+}
+
+.yellow {
+  color: #ffbf19;
+  margin-right: 5px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.yellow:not(:first-of-type) {
+  margin-left: 5px;
+}
+
+.FooterSection {
+  margin: 100px 50px 20px;
+  display: flex;
+  height: 33px;
+}
+
+.FooterSection > svg {
+  width: 50px;
+  height: 21px;
+}
+
+.footerText {
+  margin: 0 0 7px 16px;
+  font-size: 10px;
+  line-height: 13px;
+  font-family: "Noto Sans KR", sans-serif;
+}
